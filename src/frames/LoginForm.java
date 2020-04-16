@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package textileerp;
+package frames;
 
 import javax.swing.JOptionPane;
 
@@ -46,7 +46,7 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(204, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
         jPanel2.setLayout(new java.awt.BorderLayout());
 
         logo.setBackground(new java.awt.Color(102, 102, 102));
@@ -56,7 +56,7 @@ public class LoginForm extends javax.swing.JFrame {
         logo.setText("CE TEXTILES PVT LTD");
         jPanel2.add(logo, java.awt.BorderLayout.CENTER);
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 70));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 50));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -71,7 +71,7 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel3.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 110, 20));
         jPanel3.add(pwinput, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 190, -1));
 
-        jButton1.setBackground(new java.awt.Color(204, 0, 0));
+        jButton1.setBackground(new java.awt.Color(153, 255, 255));
         jButton1.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("LOGIN");
@@ -82,7 +82,7 @@ public class LoginForm extends javax.swing.JFrame {
         });
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 90, 40));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 400, 230));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 400, 250));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,7 +106,7 @@ public class LoginForm extends javax.swing.JFrame {
          
          
          if("ahsan".equals(username) && "123".equals(password)){
-             Menu menu=new Menu();
+             MainFrame menu=new MainFrame();
              menu.setVisible(true);
              this.setVisible(false);
          }
